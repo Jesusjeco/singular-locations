@@ -1,0 +1,222 @@
+{
+    "key": "group_63dbb940e25d2",
+    "title": "Query settings",
+    "fields": [
+        {
+            "key": "field_63dbb940ebbc4",
+            "label": "",
+            "name": "query_settings",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "acfe_seamless_style": 1,
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large",
+            "sub_fields": [
+                {
+                    "key": "field_63dbbd68384af",
+                    "label": "Query settings",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_63dbb94106b5d",
+                    "label": "post types",
+                    "name": "post_types",
+                    "aria-label": "",
+                    "type": "acfe_post_types",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": "",
+                    "field_type": "checkbox",
+                    "default_value": [],
+                    "return_format": "name",
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "allow_custom": 0,
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "choices": [],
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "search_placeholder": "",
+                    "other_choice": 0
+                },
+                {
+                    "key": "field_63dbb9410a519",
+                    "label": "post categories",
+                    "name": "post_categories",
+                    "aria-label": "",
+                    "type": "acfe_taxonomy_terms",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": [
+                        "category"
+                    ],
+                    "allow_terms": "",
+                    "allow_level": "",
+                    "field_type": "checkbox",
+                    "default_value": [],
+                    "return_format": "id",
+                    "layout": "vertical",
+                    "toggle": 0,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "choices": [],
+                    "ui": 0,
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "search_placeholder": "",
+                    "allow_custom": 0,
+                    "other_choice": 0
+                },
+                {
+                    "key": "field_63dbb9410e10b",
+                    "label": "Posts per page",
+                    "name": "posts_per_page",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "Empty or zero means ALL",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "default_value": 3,
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": 1,
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_63dbc1f314ace",
+                    "label": "Post order by",
+                    "name": "orderby",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "date": "Date",
+                        "name": "Name"
+                    },
+                    "default_value": "date",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "allow_custom": 0,
+                    "search_placeholder": ""
+                },
+                {
+                    "key": "field_63dbc22484123",
+                    "label": "Post order",
+                    "name": "order",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "DESC": "Descendant",
+                        "ASC": "Ascendant"
+                    },
+                    "default_value": "DESC",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "allow_custom": 0,
+                    "search_placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/singularlocations-slider"
+            }
+        ]
+    ],
+    "menu_order": -2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "Query settings",
+    "acfe_autosync": [
+        "php",
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1686635616,
+    "acfe_categories": {
+        "block-queries": "Block - queries"
+    }
+}

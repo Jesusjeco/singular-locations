@@ -1,0 +1,14 @@
+{
+    "name": "acf/singularlocations-slider",
+    "title": "singularlocations-slider",
+    "description": "A custom singularlocations-slider block.",
+    "style": ["file:./singularlocations-slider.css"],
+    "category": "formatting",
+    "icon": "slides",
+    "keywords": ["jecoslider", "quote"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "singularlocations-slider.php"
+    },
+    "align": "full"
+}

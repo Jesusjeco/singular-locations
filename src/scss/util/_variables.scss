@@ -1,0 +1,25 @@
+@use "breakpoints";
+
+@function is-important($important) {
+    @return #{if($important, "!important", "")};
+}
+
+//General spacing
+@mixin spacing($important: false) {
+    padding: 4rem 1rem 4rem 1rem is-important($important);
+    @media (min-width: breakpoints.$desktop_small) {
+        padding: 4rem 3rem 4rem 3rem is-important($important);
+    }
+    @media (min-width: breakpoints.$desktop_large) {
+        padding: 4rem 5rem 4rem 5rem is-important($important);
+    }
+    @media (min-width: breakpoints.$desktop_xlarge) {
+        padding: 4rem 200px 4rem 200px is-important($important);
+    }
+} //spacing
+
+
+@mixin title_spacing {
+    padding-bottom: 1.5rem;
+    margin: 0;
+}
