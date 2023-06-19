@@ -15,7 +15,15 @@ function compileCss(cb) {
         .pipe(dest('assets/css/'));
 }
 
-function compilePartsCss(cb) {
+function compileBlocksJs(cb) {
+    cb();
+    return src('src/js/blocks/**/*.js')
+        .pipe(babel())
+        //.pipe(concat('singularlocations-slider.js'))
+        .pipe(dest('blocks/'));
+}
+
+function compileBlocksCss(cb) {
     cb();
     return src('src/scss/blocks/**/*.scss')
         .pipe(sass())
@@ -24,10 +32,32 @@ function compilePartsCss(cb) {
         .pipe(dest('blocks/'));
 }
 
+function compileSwipperJS(cb) {
+    //cb();
+    return src(['node_modules/swiper/swiper-bundle.min.js'])
+        .pipe(babel())
+        .pipe(concat('swiper.js'))
+        .pipe(dest('assets/js/'));
+}
+
+function compileSwiperCss(cb) {
+    //cb();
+    return src('node_modules/swiper/swiper-bundle.min.css')
+        .pipe(sass())
+        .pipe(dest('assets/css/'));
+}
+
+function compileImages(cb) {
+    cb();
+    return src('src/images/*')
+        .pipe(imagemin())
+        .pipe(dest('assets/images/'));
+}
+
 //exports.build = build;
-exports.default = series(compileCss, compilePartsCss);
+exports.default = series(compileCss, compileBlocksCss, compileSwipperJS, compileSwiperCss, compileBlocksJs, compileImages);
 
 exports.watcher = function () {
     watch(['src/scss/*.scss', 'src/scss/**/*.scss', 'src/scss/template-parts/**/*.scss'], compileCss);
-    watch(['src/scss/*.scss', 'src/scss/**/*.scss', 'src/scss/template-parts/**/*.scss'], compilePartsCss);
+    watch(['src/scss/*.scss', 'src/scss/**/*.scss', 'src/scss/template-parts/**/*.scss'], compileBlocksCss);
 };

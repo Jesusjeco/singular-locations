@@ -202,7 +202,7 @@ acf_add_local_field_group(array(
 			array(
 				'param' => 'block',
 				'operator' => '==',
-				'value' => 'acf/singularlocations-slider',
+				'value' => 'acf/jc-catalogue',
 			),
 		),
 	),
@@ -212,7 +212,7 @@ acf_add_local_field_group(array(
 	'label_placement' => 'left',
 	'instruction_placement' => 'label',
 	'hide_on_screen' => '',
-	'active' => false,
+	'active' => true,
 	'description' => '',
 	'show_in_rest' => 0,
 	'acfe_display_title' => 'Query settings',
@@ -223,10 +223,7 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'acfe_categories' => array(
-		'block-queries' => 'Block - queries',
-	),
-	'modified' => 1686635616,
+	'modified' => 1687118407,
 ));
 
 endif;

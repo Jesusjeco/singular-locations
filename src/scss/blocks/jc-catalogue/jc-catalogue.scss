@@ -1,0 +1,68 @@
+@use "../../util/variables";
+@use "../../util/breakpoints";
+.jc-catalogue {
+    &.contain {
+        @include variables.spacing;
+    }
+    &_wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-flow: row dense;
+        gap: 15px;
+
+        @media (min-width: breakpoints.$tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: breakpoints.$desktop_small) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &_item {
+            &:first-of-type {
+                @media (min-width: breakpoints.$desktop_medium) {
+                    grid-row: span 2;
+                    aspect-ratio: auto;
+                }
+            }
+            aspect-ratio: 1/1;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+
+            &:hover {
+                & img {
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+            }
+            &_image {
+                transform: scale(1);
+                transition: 0.5s;
+
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 1;
+            }
+            &_overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                background-color: #00000050;
+            }
+            &_information {
+                position: absolute;
+                z-index: 3;
+                color: white;
+                bottom: 1rem;
+                left: 1rem;
+                &_name {
+                }
+                &_icon {
+                }
+            }
+        }
+    }
+}

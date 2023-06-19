@@ -1,0 +1,14 @@
+{
+    "name": "acf/jc-catalogue",
+    "title": "jc-catalogue",
+    "description": "A custom jc-catalogue block.",
+    "style": ["file:./jc-catalogue.css"],
+    "category": "formatting",
+    "icon": "grid-view",
+    "keywords": ["jc-catalogue", "catalogue", "locations"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "jc-catalogue.php"
+    },
+    "align": "full"
+}
