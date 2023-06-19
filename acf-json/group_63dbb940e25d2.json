@@ -194,7 +194,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/singularlocations-slider"
+                "value": "acf\/jc-catalogue"
             }
         ]
     ],
@@ -204,7 +204,7 @@
     "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": true,
     "description": "",
     "show_in_rest": 0,
     "acfe_display_title": "Query settings",
@@ -215,8 +215,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1686635616,
-    "acfe_categories": {
-        "block-queries": "Block - queries"
-    }
+    "modified": 1687118407
 }
