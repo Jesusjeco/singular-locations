@@ -22,6 +22,6 @@
     "sass": "^1.57.1"
   },
   "dependencies": {
-    "swiper": "^9.4.1"
+    "slick-carousel": "^1.8.1"
   }
 }

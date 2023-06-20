@@ -1,0 +1,14 @@
+{
+    "name": "acf/slick-slider",
+    "title": "slick-slider",
+    "description": "A custom slick-slider block.",
+    "style": ["file:./slick-slider.css"],
+    "category": "formatting",
+    "icon": "grid-view",
+    "keywords": ["slick-slider", "slider", "categories"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "slick-slider.php"
+    },
+    "align": "full"
+}

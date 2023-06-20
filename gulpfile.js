@@ -32,6 +32,7 @@ function compileBlocksCss(cb) {
         .pipe(dest('blocks/'));
 }
 
+/*
 function compileSwipperJS(cb) {
     //cb();
     return src(['node_modules/swiper/swiper-bundle.min.js'])
@@ -46,6 +47,20 @@ function compileSwiperCss(cb) {
         .pipe(sass())
         .pipe(dest('assets/css/'));
 }
+*/
+function compileSlickSliderCss(cb) {
+    //cb();
+    return src('node_modules/slick-carousel/slick/slick.scss')
+        .pipe(sass())
+        .pipe(dest('assets/css/'));
+}
+function compileSlickSliderJS(cb) {
+    //cb();
+    return src(['node_modules/slick-carousel/slick/slick.min.js'])
+        .pipe(babel())
+        .pipe(concat('slick.js'))
+        .pipe(dest('assets/js/'));
+}
 
 function compileImages(cb) {
     cb();
@@ -55,7 +70,7 @@ function compileImages(cb) {
 }
 
 //exports.build = build;
-exports.default = series(compileCss, compileBlocksCss, compileSwipperJS, compileSwiperCss, compileBlocksJs, compileImages);
+exports.default = series(compileCss, compileBlocksCss, compileBlocksJs, compileImages, compileSlickSliderCss, compileSlickSliderJS);
 
 exports.watcher = function () {
     watch(['src/scss/*.scss', 'src/scss/**/*.scss', 'src/scss/template-parts/**/*.scss'], compileCss);

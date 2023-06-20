@@ -28,15 +28,28 @@ include "blocks/index.php";
 
 // Registering Style from SASS
 wp_register_style("style-sass", get_template_directory_uri() . "-child/assets/css/style.css", [], true);
+/*
 //Swipper
 wp_register_style("swiper-css", get_template_directory_uri() . "-child/assets/css/swiper-bundle.min.css", [], true);
 wp_register_script("swiper-js", get_template_directory_uri() . "-child/assets/js/swiper.js", [], true);
+*/
+
+//Slick slider
+wp_register_style("slick-css", get_template_directory_uri() . "-child/assets/css/slick.css", [], true);
+wp_register_script("slick-js", get_template_directory_uri() . "-child/assets/js/slick.js", array('jquery'), true);
 
 /*
  * wp_head actions
  */
 add_action("wp_head", function () {
     wp_enqueue_style('style-sass');
+});
+
+/*
+ * wp_footer actions
+ */
+add_action("wp_footer", function () {
+    wp_enqueue_script('jquery');
 });
 
 /*

@@ -205,6 +205,13 @@ acf_add_local_field_group(array(
 				'value' => 'acf/jc-catalogue',
 			),
 		),
+		array(
+			array(
+				'param' => 'block',
+				'operator' => '==',
+				'value' => 'acf/slick-slider',
+			),
+		),
 	),
 	'menu_order' => -2,
 	'position' => 'normal',
@@ -223,7 +230,7 @@ acf_add_local_field_group(array(
 	'acfe_form' => 0,
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1687118407,
+	'modified' => 1687204926,
 ));
 
 endif;
