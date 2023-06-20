@@ -196,6 +196,13 @@
                 "operator": "==",
                 "value": "acf\/jc-catalogue"
             }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/slick-slider"
+            }
         ]
     ],
     "menu_order": -2,
@@ -215,5 +222,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1687118407
+    "modified": 1687204926
 }

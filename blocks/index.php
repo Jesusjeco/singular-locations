@@ -5,4 +5,5 @@ function register_acf_blocks()
 {
     register_block_type(__DIR__ . '/testimonial');
     register_block_type(__DIR__ . '/jc-catalogue');
+    register_block_type(__DIR__ . '/slick-slider');
 }
