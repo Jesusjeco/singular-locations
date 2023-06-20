@@ -20,5 +20,8 @@
     "gulp-imagemin": "^7.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
   }
 }
